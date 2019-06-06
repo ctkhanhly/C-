@@ -197,6 +197,7 @@ int main(){
             if(!sweeper.validCol(c)){
                 cout << "Square already visible\n";
                 continue;
+                //row_sel hasn't been set to r here, loop still runs
             }
             row_sel = r;
             col_sel = c;

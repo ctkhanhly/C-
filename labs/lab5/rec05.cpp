@@ -134,6 +134,7 @@ public:
             delete student;
             student = nullptr;
         }
+        //clear vector()?
     }
     //timeslot(section.timeslot.getDayOfWeek(), section.timeslot.getHour())
     //why section can access timeslot here? private field

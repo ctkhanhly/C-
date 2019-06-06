@@ -1,3 +1,9 @@
+/*
+Ly Cao
+DLEC
+Homework 5
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -207,12 +213,20 @@ Then, this method prints out the result of the battle.
     }
 };
 
+void lookForWarrior(const string& name, const vector<Warrior*> warriors){
+
+}
 /*
 This method performs creates the Warrior 
 with the specified name and push the Warrior in 
 a vector of all Warrior pointers
 */
 void WarriorCommand(const string& name, double strength, vector<Warrior*>& warriors){
+     //Should not be exiting if a noble/warrior isn't 
+    //  found since this is not crucial to the whole program. 
+    //  One mistake in the file that is being 
+    //  read should not kill the whole program
+
     for(Warrior* warrior: warriors){
         if(warrior->getName() == name){
             cerr << "This warrior already exists" << endl;
@@ -416,6 +430,8 @@ void ClearCommand(vector<Noble*>& nobles, vector<Warrior*>& warriors){
         delete warrior;
         warrior = nullptr;
     }
+    //, ifstream& ifs
+    //ifs.clear();
 }
 
 

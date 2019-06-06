@@ -165,7 +165,7 @@ int main(){
     //  cpcI = &sal;  //cannot change const value, sal is const itself, but its address is not const
     // *cpcI = 7623; //value of const int* const is also const
 
-
+//does const int* needs to be initialized
 
     Complex c = {11.23,45.67};      
     Complex* pC(&c);
